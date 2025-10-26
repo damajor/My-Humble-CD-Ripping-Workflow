@@ -37,6 +37,8 @@ Table of content
             3. [Verification](#verification)
             4. [Metadata -> Album Art](#metadata---album-art)
     2. [MP3Tag](#mp3tag)
+        1. [Add an action to adjust cover size](#add-an-action-to-adjust-cover-size)
+        2. [Process](#process)
     3. [fatsort](#fatsort)
 4. [Wine](#wine)
 5. [Sources](#sources)
@@ -83,13 +85,17 @@ Here are my settings:
 ![alt text](images/image-24.png)
 ![alt text](images/image-25.png)
 ![alt text](images/image-26.png)
+
 **Offsets should be automatically setup during the AccuRip test.**
+
 ![alt text](images/image-27.png)
 
 #### Compression Options
 ![alt text](images/image-28.png)
+
 Additional command-line options:
 `-8 -V -T "ARTIST=%artist%" -T "TITLE=%title%" -T "ALBUM=%albumtitle%" -T "DATE=%year%" -T "TRACKNUMBER=%tracknr%" -T "GENRE=%genre%" -T "PERFORMER=%albuminterpret%" -T "COMPOSER=%composer%" %haslyrics%"tag-from-file=LYRICS="%lyricsfile%"%haslyrics% -T "ALBUMARTIST=%albumartist%" -T "DISCNUMBER=%cdnumber%" -T "TOTALDISCS=%totalcds%" -T "TOTALTRACKS=%numtracks%" -T "COMMENT=%comment%" %source% -o %dest%`
+
 ![alt text](images/image-29.png)
 ![alt text](images/image-30.png)
 ![alt text](images/image-31.png)
@@ -101,10 +107,15 @@ Configure to fit your needs as you wish.
 ### Rip process
 
 - detect gaps
+
 ![alt text](images/image-32.png)
+
 - create CUE file
+
 ![alt text](images/image-33.png)
+
 - test & compress
+
 ![alt text](images/image-34.png)
 
 ## CUETools
@@ -113,6 +124,7 @@ Configure to fit your needs as you wish.
 
 - write all accurip tags to files
 - Verify AccuRip (write ac tags and log file)
+
 ![alt text](images/image-13.png)
 
 ### Verifying Process
@@ -120,6 +132,7 @@ Configure to fit your needs as you wish.
 - Select `Verify` and `only if rip log present`.
 - Open the directory containing the `.cue` file and `.flac`, select the `.cue` file
 - Click `Go`
+
 ![alt text](images/image-35.png)
 
 ## MusicBrainz Picard
@@ -129,43 +142,63 @@ Configure to fit your needs as you wish.
 First, install the file naming script:
 - Download the script [Salty's MusicBrainz Picard Naming Script](https://musichoarders.xyz/assets/doc/salty-picard-naming-script.txt)
 - Install the script in MusicBrainz Picard
+
 ![alt text](images/image-3.png)
 
 Open options (Menu: Options -> Options...)
+
 1) General
   - Login your MusicBrainz account
 2) Covert Art
+
 ![alt text](images/image.png)
-3) Covert Art Archive
+
+4) Covert Art Archive
 Select the images you want to download for each release. I choose all.
+
 ![alt text](images/image-1.png)
-4) File Naming
+
+5) File Naming
 - `Destination directory`: choose your output directory
 - Select the file naming script previously installed
+
 ![alt text](images/image-4.png)
-5) Fingerprinting
+
+6) Fingerprinting
+
 ![alt text](images/image-2.png)
-6) Plugins
+
+7) Plugins
 - AccousticBrainz
+
 ![alt text](images/image-5.png)
+
 - Last.fm
+
 ![alt text](images/image-6.png)
+
 - ReplayGain v2.0
 Install ReplayGain binaries from here https://github.com/complexlogic/rsgain
+
 ![alt text](images/image-7.png)
 
 ### Tag & Move to library Process
 
 - Add files
 - Cluster
+
 ![alt text](images/image-9.png)
+
 - Right click the cluster (album) choose `PLugins -> Calculate Cluster ReplayGain as Album...`
+
 ![alt text](images/image-8.png)
+
 - Match release
   - Ideally use
 ![alt text](images/image-10.png)
   - Alternatively use `Lookup` or `Scan`
 ![alt text](images/image-11.png)
+
 - Update tags manually if needed
 - Save files
 ![alt text](images/image-12.png)
@@ -190,6 +223,7 @@ Install ReplayGain binaries from here https://github.com/complexlogic/rsgain
 #### Output files
 
 ![alt text](images/image-42.png)
+
 Filename pattern, one of:
 - `<albumartist> - <album>/<disc>-<track> - <artist> - <title>`
 - `<albumartist>/<album>/<disc>-<track> - <title>`
@@ -197,11 +231,13 @@ Filename pattern, one of:
 #### Verification
 
 ![alt text](images/image-43.png)
+
 Disable all verification, we are doing loosy encoding so nevermind.
 
 #### Metadata -> Album Art
 
 ![alt text](images/image-44.png)
+
 Make sure to check `Restrict file names` and enter `front` as name so only the first cover file matching `front.png` or `front.jpg` will be embedded in the encoded file.
 
 If you enter a file pattern with jokers (like `front*`) fre:ac will embed ALL files matching the pattern, this is useless and will make the encoded files pretty heavy.
@@ -210,7 +246,26 @@ Also set `File size limit` to `unlimited`.
 
 ## MP3Tag
 
-- Add an action to adjust cover files to 300x300 pixels maximum
+### Add an action to adjust cover size
+
+Follow these steps:
+![alt text](images/image-51.png)
+![alt text](images/image-50.png)
+![alt text](images/image-52.png)
+![alt text](images/image-53.png)
+![alt text](images/image-54.png)
+![alt text](images/image-55.png)
+
+Select Jpeg format and 300x300 pixels size for maximum compatibility.
+
+And now you have to confirm everything by clicking `OK`
+
+### Process
+
+- Add directories where are your M4A/MP4/MP3 files (usualy output directory of `fre:ac`)
+- Select all files
+- Right click the selection and apply the `Adjust Cover` action
+![alt text](images/image-56.png)
 
 ## fatsort
 
