@@ -70,20 +70,33 @@ Avoid to run the wizard and just follow any well documented various "perfect-bit
 Here are my settings:
 
 #### EAC Options
+
 ![alt text](images/image-14.png)
+
 ![alt text](images/image-15.png)
+
 ![alt text](images/image-16.png)
+
 ![alt text](images/image-17.png)
+
 ![alt text](images/image-18.png)
+
 ![alt text](images/image-19.png)
+
 ![alt text](images/image-20.png)
+
 ![alt text](images/image-21.png)
+
 ![alt text](images/image-22.png)
+
 ![alt text](images/image-23.png)
 
 #### Drive Options
+
 ![alt text](images/image-24.png)
+
 ![alt text](images/image-25.png)
+
 ![alt text](images/image-26.png)
 
 **Offsets should be automatically setup during the AccuRip test.**
@@ -91,13 +104,16 @@ Here are my settings:
 ![alt text](images/image-27.png)
 
 #### Compression Options
+
 ![alt text](images/image-28.png)
 
 Additional command-line options:
 `-8 -V -T "ARTIST=%artist%" -T "TITLE=%title%" -T "ALBUM=%albumtitle%" -T "DATE=%year%" -T "TRACKNUMBER=%tracknr%" -T "GENRE=%genre%" -T "PERFORMER=%albuminterpret%" -T "COMPOSER=%composer%" %haslyrics%"tag-from-file=LYRICS="%lyricsfile%"%haslyrics% -T "ALBUMARTIST=%albumartist%" -T "DISCNUMBER=%cdnumber%" -T "TOTALDISCS=%totalcds%" -T "TOTALTRACKS=%numtracks%" -T "COMMENT=%comment%" %source% -o %dest%`
 
 ![alt text](images/image-29.png)
+
 ![alt text](images/image-30.png)
+
 ![alt text](images/image-31.png)
 
 #### Metadata Options
@@ -252,11 +268,17 @@ Also set `File size limit` to `unlimited`.
 ### Add an action to adjust cover size
 
 Follow these steps:
+
 ![alt text](images/image-51.png)
+
 ![alt text](images/image-50.png)
+
 ![alt text](images/image-52.png)
+
 ![alt text](images/image-53.png)
+
 ![alt text](images/image-54.png)
+
 ![alt text](images/image-55.png)
 
 Select Jpeg format and 300x300 pixels size for maximum compatibility.
