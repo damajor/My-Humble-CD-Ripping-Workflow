@@ -118,6 +118,9 @@ Configure to fit your needs as you wish.
 
 ![alt text](images/image-34.png)
 
+> Note:
+> If you don't want to read logs, you can upload them here [Cambia](https://logs.musichoarders.xyz/) to get a visual summary of your RIPs.
+
 ## CUETools
 
 ### Settings
@@ -299,4 +302,5 @@ cd $WINEPREFIX/drive_c/Program\ Files\ \(x86\)/Exact\ Audio\ Copy/ && regsvr32 s
 [EAC Setup & Config](https://web.archive.org/web/2/https://flemmingss.com/perfect-cd-ripping-to-flac-with-exact-audio-copy/)
 [Guides from HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Category:Guides)
 [Music Hoarders](https://musichoarders.xyz/)
+[Cambia Logs Analyzer](https://logs.musichoarders.xyz/)
 
