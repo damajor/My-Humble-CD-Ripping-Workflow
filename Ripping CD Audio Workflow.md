@@ -320,9 +320,9 @@ cd $WINEPREFIX/drive_c/Program\ Files\ \(x86\)/Exact\ Audio\ Copy/ && regsvr32 s
 
 # Sources
 
-[Exact Audio Copy](https://www.exactaudiocopy.de/en/)
-[EAC Setup & Config](https://web.archive.org/web/2/https://flemmingss.com/perfect-cd-ripping-to-flac-with-exact-audio-copy/)
-[Guides from HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Category:Guides)
-[Music Hoarders](https://musichoarders.xyz/)
-[Cambia Logs Analyzer](https://logs.musichoarders.xyz/)
+- [Exact Audio Copy](https://www.exactaudiocopy.de/en/)
+- [EAC Setup & Config](https://web.archive.org/web/2/https://flemmingss.com/perfect-cd-ripping-to-flac-with-exact-audio-copy/)
+- [Guides from HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Category:Guides)
+- [Music Hoarders](https://musichoarders.xyz/)
+- [Cambia Logs Analyzer](https://logs.musichoarders.xyz/)
 
