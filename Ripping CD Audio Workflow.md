@@ -214,7 +214,7 @@ Also set `File size limit` to `unlimited`.
 
 ## fatsort
 
-Some player are really dumb and either sort track based on title tag or even weirder some sort tracks based on file creation time. For the last I use `fatsort`.
+Some player are really dumb and either sort tracks based on title tag or even weirder some sort tracks based on file creation time. For the last I use `fatsort`.
 
 Insert the USB drive, make sure the USB partition is not mounted and run:
 `fatsort /dev/sda1`
