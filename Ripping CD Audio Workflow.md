@@ -40,6 +40,7 @@ Table of content
         1. [Add an action to adjust cover size](#add-an-action-to-adjust-cover-size)
         2. [Process](#process)
     3. [fatsort](#fatsort)
+        1. [TODO Repair fat](#todo-repair-fat)
 4. [Wine](#wine)
 5. [Sources](#sources)
 
@@ -298,6 +299,10 @@ Some player are really dumb and either sort tracks based on title tag or even we
 
 Insert the USB drive, make sure the USB partition is not mounted and run:
 `fatsort /dev/sda1`
+
+### TODO Repair fat
+
+`TODO`
 
 # Wine
 
