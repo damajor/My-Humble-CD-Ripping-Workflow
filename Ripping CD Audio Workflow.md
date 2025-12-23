@@ -317,10 +317,11 @@ mkdir -p "$WINEPREFIX"
 if [ ! -d "${WINEPREFIX}/.wine" ]; then
   echo "Setting up a prefix for EAC/CUETools. Stand by!"
   WINEDLLOVERRIDES="mscoree=" wine wineboot
+  wine 
   winetricks -q dotnet20 dotnet40 dotnet48 vcrun2008 vcrun2022
 fi
 wine $eac_install
-cd $WINEPREFIX/drive_c/Program\ Files\ \(x86\)/Exact\ Audio\ Copy/ && regsvr32 sql*
+cd $WINEPREFIX/drive_c/Program\ Files\ \(x86\)/Exact\ Audio\ Copy/ && wine regsvr32 sql*
 ```
 
 # Sources
